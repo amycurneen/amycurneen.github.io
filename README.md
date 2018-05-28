@@ -1,1 +1,1 @@
-# amycurneen.github.io
+Amy Curneen
