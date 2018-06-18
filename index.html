@@ -1,10 +1,239 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-  <h1>Amy's blog</h1>
-  Hi there
-  My name is amy
-  </body>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120931726-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120931726-1');
+  </script>
+
+  <title>Amy Curneen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+  <link rel="stylesheet" href="styles/mystyle.css">
+  <link rel="stylesheet" href="static/fontawesome/fontawesome-all.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Amy Curneen</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about_me">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <img src="images/hello_name.gif" height="180px">
+  <br><br><br>
+  <p>A Data Scientist with a Passion for Visualizations.</p>
+</div>
+
+<div id="about_me" class="container">
+  <div class="row">
+    <div class="col-sm-4 about" align="center">
+      <div class="highlight">
+        <i class="fas fa-chart-line fa-10x"></i>
+      </div>
+      <h2>DATA SCIENTIST BY TRADE</h2><br>
+      <p>
+      Data science, to me, is all about the story that raw data can tells and what
+      insights can be found in it. I use analytics and machine learning to solve
+      problems I run into. I then craft these findings in a captivating manor.
+      </p>
+    </div>
+    <div class="col-sm-4 about" align="center">
+      <div class="highlight">
+        <i class="fas fa-cogs fa-10x"></i>
+      </div>
+      <h2>ENGINEER BY TRAINING</h2><br>
+      <p>
+      With a Maters in Mechanical Engineering, I have worked in product development,
+      primarily on electo-mechancial systems. Product
+      development has given me to skills to build systems that offer direct value
+      to the customers or others in the organization.
+      </p>
+    </div>
+    <div class="col-sm-4 about" align="center">
+      <div class="highlight">
+        <i class="fas fa-object-group fa-10x"></i>
+      </div>
+      <h2>DESIGNER BY PASSION</h2><br>
+      <p>
+      My passion to be creative has evolved over the years. From illustraion to
+      web development to data visualization. What they all have in common: communication.
+      Communicating ideas through text and images in a creative and engaing manner.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Skills Section) -->
+<div id="skills" class="container-fluid text-center bg-grey">
+  <h2>SKILLS</h2>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="images/d3-black.png" alt="D3" height="59px">
+      <h4>D3</h4>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/HTML5.png" alt="HTML" height="59px">
+      <h4>HTML</h4>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/python_logo.png" alt="python" height="59px">
+      <h4>PYTHON</h4>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="images/adobe_ill.png" alt="adobe" height="59px">
+      <h4>ILLUSTRATOR</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="	glyphicon glyphicon-signal logo-small"></span>
+      <h4>STATISTICS</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>HARD WORK</h4>
+    </div>
+  </div>
+  <br>
+  <div class="row slideanim">
+    <h4>and many more.</h4>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center">
+  <h2>Portfolio</h2><br>
+  <h4>What I have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/patient_zero.jpg" alt="Patient Zero">
+        <p><strong>Visualize Outbreaks from Patient Zero</strong></p>
+        <p>Coming Soon</p>
+        <p>Explain</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <a href="portfolio/last_words/"><img src="images/last-words.jpg"></a>
+        <p><strong>Natural Language Processing on Inmates' Last Words</strong></p>
+        <p>6/1/2017</p>
+        <p>Explain</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <a href="portfolio/water_pump/"><img src="images/pump-it-up.jpg" alt="Water Pump"></a>
+        <p><strong>Classification on Tanzania Water Pump</strong></p>
+        <p>5/15/2018</p>
+        <p>Explain</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <img src="images/whats-next.jpg" alt="Whats Next">
+        <p><strong>Whats next?</strong></p>
+        <p>Your project can be next!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-12">
+      <form method="get" action="Resume_Amy_Curneen.pdf" align="center">
+         <button class="btn btn-default btn-lg" type="submit">Download Resume</button>
+      </form>
+    </div>
+  </div>
+  <div class="row resume">
+    <div class="col-sm-6" align="right">
+      <img class="img-circle" src="images/my_photo.jpg" alt="Amy Curneen" height="250px">
+    </div>
+    <div class="col-sm-6" style="height: 250px;">
+      <br><br>
+      <p><i class="fas fa-phone fa-lg"></i> 774 249 0008</p>
+      <p><i class="fas fa-envelope fa-lg"></i> amy@curneen.io</p>
+      <p><i class="fab fa-linkedin fa-lg"></i>&nbsp;<a class="contact" href="https://www.linkedin.com/in/curneen/" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github-square fa-lg"></i>&nbsp;<a class="contact" href="https://github.com/amycurneen" target="_blank">Github</a></p>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Back to top</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
 </html>
