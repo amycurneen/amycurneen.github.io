@@ -1,0 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px ;
+}
+select {
+    display: block;
+}
+.bar {
+    fill: #9dc9a5;
+    opacity: 0.8;
+}
+
+.bar:hover {
+    fill: #53bbe0;
+  }
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photoheader {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 220px;
+  }
+
+  #images{
+      text-align:center;
+  }
+
+  h1 {font-family: 'Carter One', cursive; font-size: 32px}
+  h2 {font-family: 'Carter One', cursive;}
