@@ -11,7 +11,8 @@
     gtag('config', 'UA-120931726-1');
   </script>
 
-  <title>Amy Curneen Push</title>
+  <title>Amy Curneen</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/images/visual.ico" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,6 +22,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
   <link rel="stylesheet" href="styles/mystyle.css">
+  <link rel="stylesheet" href="styles/nav_bar.css">
   <link rel="stylesheet" href="static/fontawesome/fontawesome-all.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -59,9 +61,9 @@
       </div>
       <h2>DATA SCIENTIST BY TRADE</h2><br>
       <p>
-      Data science, to me, is all about the story that raw data can tells and what
-      insights can be found in it. I use analytics and machine learning to solve
-      problems I run into. I then craft these findings in a captivating manor.
+      Data science, to me, is all about the story that raw data can tells and
+      what insights can be found in it. I use analytics and machine learning
+      to solve problems I run into. I then craft these findings in a captivating manor.
       </p>
     </div>
     <div class="col-sm-4 about" align="center">
@@ -70,10 +72,10 @@
       </div>
       <h2>ENGINEER BY TRAINING</h2><br>
       <p>
-      With a Maters in Mechanical Engineering, I have worked in product development,
-      primarily on electo-mechancial systems. Product
-      development has given me to skills to build systems that offer direct value
-      to the customers or others in the organization.
+        With a Masters in Mechanical Engineering, I have worked in product
+        development, primarily on electro-mechanical systems. Product development
+        has given me to skills to build systems that offer direct value to the
+        customers or others in the organization.
       </p>
     </div>
     <div class="col-sm-4 about" align="center">
@@ -82,9 +84,10 @@
       </div>
       <h2>DESIGNER BY PASSION</h2><br>
       <p>
-      My passion to be creative has evolved over the years. From illustraion to
-      web development to data visualization. What they all have in common: communication.
-      Communicating ideas through text and images in a creative and engaing manner.
+        My passion to be creative has evolved over the years. From illustration
+        to web development to data visualization. What they all have in common:
+        communication. Communicating ideas through text and images in a creative
+        and engaging manner.
       </p>
     </div>
   </div>
@@ -94,14 +97,14 @@
 <div id="skills" class="container-fluid text-center bg-grey">
   <h2>SKILLS</h2>
   <br>
-  <div class="row slideanim">
+  <div class="row">
     <div class="col-sm-4">
       <img src="images/d3-black.png" alt="D3" height="59px">
       <h4>D3</h4>
     </div>
     <div class="col-sm-4">
-      <img src="images/HTML5.png" alt="HTML" height="59px">
-      <h4>HTML</h4>
+      <span class="	glyphicon glyphicon-signal logo-small"></span>
+      <h4>STATISTICS</h4>
     </div>
     <div class="col-sm-4">
       <img src="images/python_logo.png" alt="python" height="59px">
@@ -109,14 +112,14 @@
     </div>
   </div>
   <br><br>
-  <div class="row slideanim">
+  <div class="row">
     <div class="col-sm-4">
       <img src="images/adobe_ill.png" alt="adobe" height="59px">
       <h4>ILLUSTRATOR</h4>
     </div>
     <div class="col-sm-4">
-      <span class="	glyphicon glyphicon-signal logo-small"></span>
-      <h4>STATISTICS</h4>
+      <img src="images/HTML5.png" alt="HTML" height="59px">
+      <h4>HTML</h4>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
@@ -124,40 +127,91 @@
     </div>
   </div>
   <br>
-  <div class="row slideanim">
+  <div class="row">
     <h4>and many more.</h4>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center">
-  <h2>Portfolio</h2><br>
-  <h4>What I have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-3">
+  <h2>Portfolio</h2>
+  <h3 style ="text-decoration: underline;">Data-Driven Projects</h3>
+  <br>
+  <div class="row text-center">
+    <div class="col-md-3 col-sm-6">
       <div class="thumbnail">
         <img src="images/patient_zero.jpg" alt="Patient Zero">
         <p><strong>Visualize Outbreaks from Patient Zero</strong></p>
         <p>Coming Soon</p>
-        <p>Explain</p>
+        <p>
+          In this project, my goal is to visualize how a outbreak spreads from
+           “Patient Zero”, or index case, for different infectious diseases.
+        </p>
+        <br>
+        <p>
+          Tools: BeautifulSoup, D3.js
+        </p>
+        <!--
+        <a class="btn btn-default btn-lg space" href="portfolio/last_words/" role="button">Visualization</a>
+        <br>
+        <a class="btn btn-default btn-lg space" href="portfolio/last_words/deck" role="button">Slide Deck</a>
+        -->
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-md-3  col-sm-6">
       <div class="thumbnail">
         <a href="portfolio/last_words/"><img src="images/last-words.jpg"></a>
-        <p><strong>Natural Language Processing on Inmates' Last Words</strong></p>
-        <p>6/1/2017</p>
-        <p>Explain</p>
+        <p><strong>NLP on Inmates' Last Words</strong></p>
+        <p>6/1/2018</p>
+        <p>
+          The state of Texas puts death row inmates last words as public
+          record. I used web-scraping to collect them and then natural language
+          processing to cluster them into similar sentiment.
+        </p>
+        <p>
+          Tools: BeautifulSoup, NLTK, scikit-learn, LDA, D3.js
+        </p>
+        <a class="btn btn-default btn-lg space" href="portfolio/last_words/" role="button">Visualization</a>
+        <br>
+        <a class="btn btn-default btn-lg space" href="portfolio/last_words/deck/" role="button">Slide Deck</a>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-md-3 col-sm-6">
       <div class="thumbnail">
         <a href="portfolio/water_pump/"><img src="images/pump-it-up.jpg" alt="Water Pump"></a>
         <p><strong>Classification on Tanzania Water Pump</strong></p>
-        <p>5/15/2018</p>
-        <p>Explain</p>
+        <p>5/16/2018</p>
+        <p>
+          Millions of Tanzania people rely of functioning water pumps. I created a classifiction
+          model to predict if a given water pump is functioning or not and visualized the result.
+        </p>
+        <p>
+          Tools: RandomForest, Support Vector Classifier, D3.js, Dimple.js
+        </p>
+        <a class="btn btn-default btn-lg space" href="portfolio/water_pump/" role="button">Visualization</a>
+        <br>
+        <a class="btn btn-default btn-lg space" href="portfolio/water_pump/deck" role="button">Slide Deck</a>
       </div>
     </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail">
+        <img src="images/education.jpg" alt="Education">
+        <p><strong>United States of Unequal Education</strong></p>
+        <p>4/27/2018</p>
+        <p>
+          Millions of Tanzania people rely of functioning water pumps. I created a classifiction
+          model to predict if a given water pump is functioning or not and visualized the result.
+        </p>
+        <p>
+          Tools: BeautifulSoup, Linear Regression, ElasticNetCV
+        </p>
+        <!---<a class="btn btn-default btn-lg space" href="portfolio/education/" role="button">Infographic</a>
+        <br>-->
+        <a class="btn btn-default btn-lg space" href="portfolio/education/deck" role="button">Slide Deck</a>
+      </div>
+    </div>
+
+<!--
     <div class="col-sm-3">
       <div class="thumbnail">
         <img src="images/whats-next.jpg" alt="Whats Next">
@@ -165,7 +219,58 @@
         <p>Your project can be next!</p>
       </div>
     </div>
+  -->
   </div>
+
+  <h3 style ="text-decoration: underline;">Data Science Investigations</h3>
+  <br>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="images/statistics.jpg" alt="statistics">
+        <p><strong>Hypothesis Testing</strong></p>
+        <p>6/20/2018</p>
+        <p>
+          Z-test, t-test, f-test, chi-square-test. How does anyone keep them all
+          straight? In an effort to do that, I put together a presentation for
+          my cohort about their different applications.
+        </p>
+        <a class="btn btn-default btn-lg space" href="#portfolio" role="button">Slide Deck Coming Soon</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="images/racism.jpg" alt="Racism in Data Science">
+        <p><strong>Racism in Data Science Algorithms</strong></p>
+        <p>5/21/2018</p>
+        <p>
+          Racism is a reality of the world we live in but it should not be a factor
+          in out Artifical Inteligence. This investigation looked at three Data Science
+          case studies that dealt with the sensitive subject of race.
+        </p>
+        <a class="btn btn-default btn-lg space" href="portfolio/racism/deck" role="button">Slide Deck</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="images/infographic.jpg" alt="Infographic">
+        <p><strong>Tools for Infographics</strong></p>
+        <p>4/23/2018</p>
+        <p>
+          Infographics take data and graphically tell a story. In this investigation,
+          I examined the different tools that are out there to help non-graphic designers
+          create a powerful message for their data.
+        </p>
+        <a class="btn btn-default btn-lg space" href="portfolio/infographics/deck" role="button">Slide Deck</a>
+      </div>
+    </div>
+  </div>
+
+  <h3 style ="text-decoration: underline;">Mechanical Engineering</h3>
+  <br>
+  <P>
+    Material coming soon
+  </p>
 </div>
 
 <!-- Container (Contact Section) -->
