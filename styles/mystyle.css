@@ -17,6 +17,15 @@ h4 {
     font-weight: 400;
     margin-bottom: 30px;
 }
+.modal-dialog {
+   position: absolute;
+   top: 10%;
+   left:0;
+   right:0;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
 .highlight {
   color:#0FB4BB;
 }

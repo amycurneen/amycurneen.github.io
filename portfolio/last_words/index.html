@@ -55,19 +55,21 @@
       <h3 style="text-align: center; font-size: 1.3em;"> By <a href="https://www.linkedin.com/in/curneen" target="_blank">Amy Curneen</a> <br/> June 1st, 2018 </h4>
     </div>
 
-    <p>“Do you have any last words?” The warden said to the inmate.</p>
-    <p>"I would like to give love to my mother, sisters and brothers” Freddie Webb replied, “and let them know
-      that I am thinking of them right now and I want to thank God for giving me such a loving family. To the
-      victim's family: I hope you will find it in your heart to forgive me as I have forgiven you. I'm ready, Warden." </p>
-    <p>Webb is one of the 554 people that has be executed in Texas since it became legal again in 1976. His last words are
-      written down in Texas’ history book for Texas is one of the only states that keeps public record of last words of inmates.</p>
-    <p>Every once in a while, you run across a dataset that you cannot walk away from. That is what happened to me when I
-      ran across the Texas death row inmates’ last words. There were last words that were spiritual. There were last words
-      that were remorseful. There were last words that were assertions of innocence. And there were some that were silent.
-      My goal is to visualize their last words for you here.</p>
+    <p>
+      “Do you have any last words?” The warden asked to the inmate.
+    </p>
+    <p>
+      "I would like to give love to my mother, sisters and brothers,” Freddie Webb replied, “and let them know that I am thinking of them right now, and I want to thank God for giving me such a loving family. To the victim's family: I hope you will find it in your heart to forgive me as I have forgiven you. I'm ready, Warden."
+    </p>
+    <p>
+      Webb is one of the 554 people that has been executed in Texas since it became legal again in 1976. His last words are written down in Texas’s history book, for Texas is one of the only states that keeps a public record of last words of inmates.
+    </p>
+    <p>
+      Every once in a while, you run across a dataset that you cannot walk away from. That is what happened to me when I ran across the Texas death row inmates’ last words. There were last words that were spiritual. There were last words that were remorseful. There were last words that were assertions of innocence. And there were some that were silent. My goal is to visualize their last words for you here.
+    </p>
 
     <div class="viz" id="over_time">
-      <h2>Execution History in Texas</h2>
+      <h2>Execution History of Texas</h2>
 
       <script type="text/javascript">
 
@@ -82,12 +84,7 @@
     </div>
 
     <p>
-      Over the last 40 years, there has been a lot of legislation that has changed
-      the death penalty in Texas. When the federal government made it legal in 1976,
-      it took several years for an execution to occur. In the 2000’s, these was
-      legislation put in place that narrowed the scope of the death penalty and
-      therefore decreases the executions per year. As of June, 2018, Texas has
-      already surpassed the executions of the year of 2017.
+      Over the last 40 years, legislation has changed the death penalty in significantly changed Texas. When the federal government made it legal in 1976, it took several years for an execution to actually occur. In the 2000’s, legislation was put in place that narrowed the scope of the death penalty, and therefore decreased the executions per year.
      </p>
     <br/>
 
@@ -100,7 +97,7 @@
         <label><input type="radio" name="dataset" id="dataset" value="innocent"> Innocent &emsp;</label>
       <br/><br/>
         <label><input type="radio" name="dataset" id="dataset" value="sorry"> Sorry   &emsp;</label>
-        <label><input type="radio" name="dataset" id="dataset" value="ready"> Ready Warden   &emsp;</label>
+        <label><input type="radio" name="dataset" id="dataset" value="ready"> Ready, Warden   &emsp;</label>
         <label><input type="radio" name="dataset" id="dataset" value="religion"> Religion</label>
       </form>
 
@@ -111,14 +108,7 @@
     </div>
 
     <p>
-      The question I wanted answered was what did these inmates talk about
-      during their last statements. You can see below that there were many things
-      that were mentioned in their last statements, ranging from love and remorse
-      to assertions of innocence. You can see below the proportions of each of
-      these categories. Many of the last statements had some combination of these
-      categories. I used Latent Dirichlet allocation (LDA) to do this topic
-      modeling. Once clusters were created, I was able to look at a handful of
-      the comments in order to classify them.
+      The question I wanted answered was: what did these inmates talk about during their last statements? You can see below that there were many things that were mentioned in their last statements, ranging from love and remorse to assertions of innocence. You can also see below the proportions of each of these categories. Many of the last statements had some combination of categories. I used Latent Dirichlet allocation (LDA) to do this topic modeling. Once clusters were created, I was able to look at a handful of the comments in order to classify them.
     </p>
     <br/>
 
@@ -127,21 +117,13 @@
       <h2>Positivity in their last minutes</h2>
 
       <p>
-        Another natural language processing technique I used in this project  was
-        determining the sentiment of the inmates last words. This has two parts:
-        polarity and subjectivity. Polarity describes whether a statement is
-        positive(1), neutral(0) or negative(-1). Subjectivity describes whether a
-        statement is objective(0) or subjective(1).
+        Another natural language processing technique I used in this project was determining the sentiment of the inmates’ last words. This has two parts: polarity and subjectivity. Polarity describes whether a statement is positive(1), neutral(0) or negative(-1). Subjectivity describes whether a statement is objective(0) or subjective(1).
       </p>
     </div>
 
     <script src="javascript/scatter_sentiment.js" charset="utf-8"></script>
     <p>
-      Inmates last words, shown in blue, tend to stick to be neutral and positive.
-      The question I posed was how does this compare to how others talk about death.
-      Poems about death, shown in orange, also tend to be positive. On the other
-      side, when I asked 100 people what their last words would be or how they
-      would feel if they were being executed, these were, as a whole, negative.
+      Inmates’ last words, shown in blue, tend to range from neutral to positive. I was curious to see how this population compared to others. Poems about death, shown in orange, also tend to be positive. On the other hand, when I surveyed 100 people on what their last words would be or how they would feel if they were going to be executed, these were, as a whole, negative, shown in green.
     </p>
 
     <div class="viz" id="inmate_grid" style="height:800px;margin:0 auto;">
