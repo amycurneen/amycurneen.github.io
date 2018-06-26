@@ -1,0 +1,91 @@
+body {
+  margin:0;
+  position:fixed;
+  top:0;right:0;bottom:0;left:0;
+  font-family: Helvetica, Arial;
+}
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 0.9em;
+}
+h1  {
+  font-family: 'Montserrat', sans-serif;
+}
+h2  {
+  font-family: 'Montserrat', sans-serif;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+#graph {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+.center {
+    text-align: center;
+}
+svg {
+  background-color: #ddd;
+  position: absolute;
+}
+path {
+  stroke: black;
+  stroke-width: 0.25px;
+  fill: white;
+}
+#container {
+  position: relative;
+  z-index: 100;
+}
+#sticky {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 50;
+}
+.legend{
+  font-family: 'Montserrat', sans-serif;
+}
+.legend_small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+}
+.progress_dates {
+  font-family: 'Montserrat', sans-serif;
+}
+.panel {
+  width: 100%;
+  padding-top: 45vh;
+  padding-bottom: 45vh;
+  text-align: center;
+}
+.short {
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+}
+.shortLast {
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 40vh;
+  text-align: center;
+}
+
+.header{
+  padding-top: 30vh;
+  padding-bottom: 0vh;
+}
+.info {
+  margin: auto;
+  padding: 25px;
+  background-color:rgba(255,255,255,0.7);
+  max-width: 300px;
+  border-radius: 25px;
+  box-shadow: 6px 6px 22px #aaaaaa;
+}
