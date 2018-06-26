@@ -1,11 +1,18 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Slide Deck</title>
-  </head>
-  <body>
-    <h1>Coming Soon</h1>
-  </body>
+
+<script type="text/javascript">
+
+function detectBrowser()
+{
+    var slashIndex = window.location.href.lastIndexOf("/");
+    var cropped = window.location.href.slice(0,slashIndex+1);
+
+    window.location.replace(cropped + "assets/player/KeynoteDHTMLPlayer.html");
+}
+
+</script>
+
+<body bgcolor="black" onload="detectBrowser()">
+</body>
+
 </html>
