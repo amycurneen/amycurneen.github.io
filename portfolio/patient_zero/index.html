@@ -1,11 +1,625 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Slide Deck</title>
-  </head>
-  <body>
-    <h1>Coming Soon</h1>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/topojson.v0.min.js"></script>
+  <script src="//d3js.org/d3-geo-projection.v1.min.js"></script>
+  <script src="//d3js.org/topojson.v2.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Raleway|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+  <div id="sticky">
+  </div>
+
+  <div id="container" style="height: 100vh; overflow: scroll">
+    <div id="content">
+      <div class="panel header">
+        <div class="info">
+          <h1>Visualizing the Ebola Outbreak</h1>
+          <h4>2014 to 2016</h4>
+          <p>By Amy Curneen</p>
+          <p>June 28th, 2018</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="info">
+          <h2>Patient Zero</h2>
+          <p>
+            Patient Zero is the first documented patient of a condition or a syndrome. The index case may or may not indicate the source of the disease, the possible spread, or which reservoir holds the disease in between outbreaks, but may bring awareness of an emerging outbreak. Patient Zero refers to the person who first brings a disease into a group of people.
+          </p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="info">
+          <h2>Ebola's Patient Zero</h2>
+          <p>
+            18-month-old boy, Emile Ouamouno, of Meliandou village, Guinea
+          </p>
+        </div>
+      </div>
+      <div class=" short ">
+        <div class="info">
+          <h4>December 6, 2013</h4>
+          <p>
+            Emile had a fever, black stool and started vomiting. Four days later, he was dead.
+          </p>
+        </div>
+      </div>
+      <div class=" short">
+        <div class="info">
+          <h4>December 13, 2013</h4>
+          <p>
+            Emile’s mother died.
+          </p>
+        </div>
+      </div>
+      <div class=" short">
+        <div class="info">
+          <h4>December 29, 2013</h4>
+          <p>
+            The toddler's 3-year-old sister died.
+          </p>
+        </div>
+      </div>
+      <div class=" short">
+        <div class="info">
+          <h4>January 1, 2014</h4>
+          <p>
+            The grandmother passed away. After several people attended her funeral, the illness spread outside their village, Meliandou, a rainforest village in southern Guinea.
+          </p>
+        </div>
+      </div>
+      <div class="shortLast">
+        <div class="info">
+          <h4>Ebola kept spreading</h4>
+          <p>
+            A midwife passed the disease to relatives in another village, and to a health care worker treating her.
+            That health care worker was treated at a hospital in Macenta, about 80 kilometers (50 miles) east. A doctor who treated her contracted Ebola.
+            The doctor then passed it to his brothers in Kissidougou, 133 kilometers (83 miles) away. All of them died.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>January 24, 2014</h4>
+          <p>
+          An official medical alert was issued to the district health officials.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>March 13, 2014</h4>
+          <p>
+            The Ebola virus soon spread to Guinea’s capital city of Conakry and the Ministry of Health in Guinea issued an alert for an unidentified illness. Shortly after, the Pasteur Institute in France confirmed the illness as EVD caused by Zaire ebolavirus.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>March 23, 2014</h4>
+          <p>
+            With 49 confirmed cases and 29 deaths, the WHO officially declared an outbreak of EVD.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>July 2014</h4>
+          <p>
+            This outbreak quickly spread to Guinea’s bordering countries, Liberia and Sierra Leone. The outbreak spread to the capitals of all three countries. This was the first time EVD extended out from more isolated, rural areas and into densely populated urban centers, providing an unprecedented opportunity for transmission.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>August 8, 2014</h4>
+          <p>
+            WHO declared the deteriorating situation in West Africa a Public Health Emergency of International Concern (PHEIC), which is designated only for events with a risk of potential international spread or that require a coordinated international response.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>International Outbreak</h4>
+          <p>
+            Over the duration of the epidemic, EVD spread to seven more countries: Italy, Mali, Nigeria, Senegal, Spain, the United Kingdom, and the United States. Later secondary infection, mainly in a healthcare setting, occurred in Italy, Mali, Nigeria, and the United States.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>January 14, 2016</h4>
+          <p>
+            Liberia announced it was Ebola-free and no additional cases have been detected since.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>March 7, 2016</h4>
+          <p>
+            Sierra Leone announced it was Ebola-free.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <h4>June 2016</h4>
+          <p>
+            Guinea was finally declared Ebola-free.
+          </p>
+        </div>
+      </div>
+      <div class="panel ">
+        <div class="info">
+          <p>
+            Two and a half years after the first case was discovered, the outbreak ended with more than 28,600 cases and 11,325 deaths.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="info">
+          <h4>Thank you</h4>
+          <a href="https://www.curneen.io">Return back to my portfolio</a>
+
+          <h4>Sources</h4>
+          <p>
+            <a href="https://www.google.com" target="_blank">Data source</a>
+          </p>
+          <p>
+            <a href="https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/index.html" target="_blank">CDC</a>
+          </p>
+          <p>
+            <a href="https://www.cnn.com/2014/10/28/health/ebola-patient-zero/index.html" target="_blank">CNN</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var dataset;
+
+    d3.csv("results_fixes.csv", function(error,data) {
+      if (error) throw error;
+      dataset = data;
+
+      var scaleConstant = 6;
+
+      //map stuff
+      var projection = d3.geoNaturalEarth()
+        .translate([0,0]);
+
+      var path = d3.geoPath().projection(projection);
+      //end map stuff
+
+      var length = Object.keys(data[0]).length - 4
+
+      var WIDTH = window.innerWidth
+      var HEIGHT = window.innerHeight
+
+      var svg = d3.select("#sticky").html('')
+        .append("svg")
+        .attr("id","svgFull")
+      	.attr('width', WIDTH)
+      	.attr('height', HEIGHT)
+        .append('g')
+        .attr("class","map")
+
+      // for resize function
+      var margin = {top: 0, left: 0, bottom: 0, right: 0}
+        , width = parseInt(d3.select('#sticky').style('width'))
+        , width = width - margin.left - margin.right
+        , height = parseInt(d3.select('#sticky').style('height'))
+        , height = height - margin.top - margin.bottom;
+
+      //Define what to do when panning or zooming
+      var zooming = function(d) {
+        //New offset array
+        var offset = [d3.event.transform.x, d3.event.transform.y];
+
+        //Calculate new scale
+        var newScale = d3.event.transform.k * 2000;
+
+        //Update projection with new offset and scale
+        projection.translate(offset)
+              .scale(newScale);
+
+        //Update all paths and circles
+        svg.selectAll("path")
+          .attr("d", path);
+
+        svg.selectAll(".testing")
+          .attr("cx", function(d) {
+            return projection([d[2],d[1]])[0];
+          })
+          .attr("cy", function(d) {
+            return projection([d[2], d[1]])[1];
+          });
+      };
+
+      //Then define the zoom behavior
+      var zoom = d3.zoom()
+        .on("zoom", zooming);
+
+      var g = svg.append("g")
+        .attr("id", "map")
+        .call(zoom)  //Bind the zoom behavior
+
+      g.call(zoom.transform, d3.zoomIdentity  //Then apply the initial transform, world view
+        .translate(WIDTH/2, HEIGHT/2)
+        .scale(.2)
+        .translate(0,0))
+        //.translate(WIDTH/2, HEIGHT/2)
+        //.scale(1.5)
+        //.translate(300,300));
+        //.scale(.2)
+        //.translate(0,0))
+
+      var currentScrollTop = d3.select('#currentScrollTop')
+
+      var bubbleLayer = svg.append('g').attr('class', 'bubbleLayer')
+      var timelineLayer = svg.append('g').attr('class', 'timelineLayer')
+
+
+      var minRadius = 0;
+      var maxRadius = 100;
+
+      var logScale = d3.scaleLog()
+        .domain([1,maxRadius])
+        .range([minRadius,maxRadius])
+
+      var body = d3.select('body').node()
+      var container = d3.select('#container')
+      var content = d3.select('#content')
+
+      var SCROLL_LENGTH = content.node().getBoundingClientRect().height - HEIGHT
+      var segment = SCROLL_LENGTH / (length-2)
+
+      //scroll pos to data point
+      var sectionScale = d3.scaleLinear()
+        .domain([0, SCROLL_LENGTH])
+        .range([0,length-2])
+
+      //scroll pos to data point
+      var progressScale = d3.scaleLinear()
+        .domain([HEIGHT*2.5, SCROLL_LENGTH-HEIGHT*1.5])
+        .range([0,WIDTH])
+        .clamp(true)
+
+      //data point to interpolation
+      //initialize - this will const update
+      var animateScale = d3.scaleLinear()
+        .range([+data[4],+data[5]])
+        .domain([0,segment])
+
+      // data to radius - sqrt to area
+      var sizeScale = d3.scaleSqrt()
+        .domain([0,4500])
+        .range([0,50])
+
+      var scrollTop = 0
+      var newScrollTop = 0
+
+      var sectionTop = 0
+      var newSectionTop = 0
+
+      var circle = bubbleLayer.selectAll('.testing')
+        .data(data)
+        .enter()
+        .append('circle')
+        .attr("class","testing")
+
+      // timeline progress bar
+      var barHeight = 20;
+
+      var timelineBack = timelineLayer.append('rect')
+        .attr('class','progress')
+        .attr('id','timelineBack')
+        .attr('x',0)
+        .attr('y',0)
+        .attr('width',WIDTH)
+        .attr('height',barHeight)
+        .attr('fill','#f2f2f2');
+
+      var timeline = timelineLayer.append('rect')
+        .attr('class','progress')
+        .attr('id','timeline')
+        .attr('x',0)
+        .attr('y',0)
+        .attr('width',0)
+        .attr('height',barHeight)
+        .attr('fill','#00a5a5');
+
+      // dates
+      var datesList = ['Dec 2013','Jan 2014','Mar 2014','August 2014','Jan 2016','Jun 2016']
+      var pad = 4
+      var len = 68
+
+      var dates = timelineLayer.selectAll('text')
+        .data(datesList)
+        .enter()
+        .append('text')
+        .attr('class','progress_dates')
+        .text(function(d) {
+          return d;
+        })
+        //.attr('text-anchor','middle')
+        .attr('x', function (d,i) {
+          return 4+i*(WIDTH - pad*2 - len - 20)/(datesList.length - 1);
+        })
+        .attr('y', barHeight-4)
+        .attr('fill','#f2f2f2');
+
+      //legend
+      var legendLayer = svg.append('g').attr('class','legendLayer')
+      var colors = [['death','grey'],['cases','red']];
+      var counts = [7000,3000,1000];
+      var rad = 20;
+      var legPad = 10;
+
+      legendLayer.append('text')
+        .attr('class','legend')
+        .text('Category')
+        .attr('y',legPad + barHeight + 15)
+        .attr('x',legPad)
+
+      legendLayer.append('text')
+        .attr('class','legend')
+        .text('Count')
+        .attr('y',4*legPad + rad*4 + barHeight + 55)
+        .attr('x',legPad)
+
+      var colorLegendLayer = legendLayer.append('g').attr('class','colorLegend')
+
+      colorLegendLayer.selectAll('circle')
+        .data(colors)
+        .enter()
+        .append('circle')
+        .attr('class','legend')
+        .attr('r',rad)
+        .attr('cy', function(d,i) {
+          return 75 + i*50;
+        })
+        .attr('cx', 30)
+        .attr('fill', function(d,i) {
+          return d[1];
+        });
+
+      colorLegendLayer.selectAll('text')
+        .data(colors)
+        .enter()
+        .append('text')
+        .attr('class','legend_small')
+        .text(function (d) {
+          return d[0];
+        })
+        .attr('y', function(d,i) {
+          return 80 + i*50;
+        })
+        .attr('x', 60);
+
+      var countLegendLayer = legendLayer.append('g').attr('class','countLegend')
+      var bottom = 330
+
+      countLegendLayer.selectAll('circle')
+        .data(counts)
+        .enter()
+        .append('circle')
+        .attr('class','legend')
+        .attr('r',function(d,i) {
+          return sizeScale(d);
+        })
+        .attr('cy', function(d,i) {
+          return bottom - sizeScale(d);
+        })
+        .attr('cx', 80)
+        .attr('fill', 'white')
+        .attr('stroke','black');
+
+      countLegendLayer.selectAll('text')
+        .data(counts)
+        .enter()
+        .append('text')
+        .attr('class','legend_small')
+        .text(function (d) {
+          var str = d + '';
+          var lab = str.substr(0,1);
+          return lab + "K";
+        })
+        .attr('text-anchor','middle')
+        .attr('y', function(d,i) {
+          if (i==2) {
+            return bottom - 0.8*sizeScale(d);
+          } else {
+            return bottom - 2*sizeScale(d) +25;
+          }
+        })
+        .attr('x', 80);
+
+      var infoLayer = svg.append('g').attr('class', 'infoLayer')
+
+      info = ['Patient Zero',
+              '3 capitals',
+              'travel, trade suffer',
+              'Liberia',
+              'Guinea']
+
+      var size = 200;
+
+      //load map
+
+      d3.json("json/world-110m2.json", function(error, topology) {
+        g.selectAll("path")
+          .data(topojson.object(topology, topology.objects.countries)
+              .geometries)
+          .enter()
+          .append("path")
+          .attr("class","map_objects")
+          .attr("d", path)
+
+        var preset = [[2.9,350,300,2000],
+                      [1.1,100,300,2000],
+                      [.2,0,0,2000]];
+
+        circle
+          .attr("cx", function(d) {
+            return projection([d[2],d[1]])[0];
+          })
+          .attr("cy", function(d) {
+            return projection([d[2], d[1]])[1];
+          })
+          .attr("fill", function(d,i) {
+              if (d[3] == "cases") { return "red";
+            } else if (d[3] == "death") { return "grey";
+              } else { return "blue";
+            }})
+          //.attr("opacity", 0.6)
+          .attr("z-index", function(d,i) {
+            if (d[3] == "cases") { return 0;
+            } else if (d[3] == "death") { return 5;
+            } else { return 10;
+            }});
+
+    		container
+      		.on("scroll.scroller", function() {
+          	newScrollTop =  container.node().scrollTop
+    	    });
+
+        var setDimensions = function() {
+          WIDTH = window.innerWidth / 2
+    			HEIGHT = window.innerHeight
+          SCROLL_LENGTH = content.node().getBoundingClientRect().height - HEIGHT
+        }
+
+        var render = function() {
+          if (scrollTop !== newScrollTop) {
+
+            scrollTop = newScrollTop
+            sectionTop = Math.floor(sectionScale(scrollTop))
+
+            circle.attr('r',function(d,i) {
+              if (sectionTop !== (length)) {
+                  animateScale.range([data[i][sectionTop+4],data[i][sectionTop+4+1]])
+                    .domain([sectionTop * segment, (sectionTop+1) * segment])
+              }
+
+              var fakeDataPoint = animateScale(scrollTop)
+              var myRadius = sizeScale(fakeDataPoint)
+              return myRadius
+            });
+
+            timeline.attr('width', function(d){
+              return progressScale(scrollTop);
+            });
+             var pos = -1;
+
+            if (sectionTop == 35) {
+              var pos = 0;
+            }
+
+            if (sectionTop == 90) {
+              var pos = 1;
+            }
+
+            if (sectionTop == length-2) {
+              var pos = 2;
+            }
+
+            if (pos == 1 | pos == 0 | pos == 2) {
+
+              if (pos == 2) {
+                circle
+                .transition()
+                .duration(2000)
+                .attr('r',0);
+              }
+
+              g.transition()
+                .duration(preset[pos][3])
+                .call(zoom.transform, d3.zoomIdentity
+                          .translate(width/2, height/2)
+                          .scale(preset[pos][0])
+                          .translate(preset[pos][1],preset[pos][2]));
+              var pos = -1;
+            }
+
+            currentScrollTop.text(scrollTop)
+          }
+
+          window.requestAnimationFrame(render)
+        }
+
+        window.requestAnimationFrame(render)
+
+      window.onresize = setDimensions
+    });
+
+    d3.select(window).on('resize', resize);
+
+    function resize() {
+      // adjust things when the window size changes
+      width = parseInt(d3.select('#sticky').style('width'));
+      width = width - margin.left - margin.right;
+      height = parseInt(d3.select('#sticky').style('height'));
+      height = height - margin.left - margin.right;
+
+      // update projection
+      projection
+        //.scale(.22)
+        .scale(width/scaleConstant)
+        .translate([width / 2, height / 2]);
+
+      // resize the map container
+      d3.select("#svgFull")
+        .style('width', width + 'px')
+        .style('height', height + 'px');
+
+      // resize the map
+      svg.selectAll('.map_objects').attr('d', path);
+
+      //progress bar resize
+      d3.select("#timelineBack").attr('width',width);
+
+      progressScale
+        .range([0,width])
+
+      d3.select("#timeline").attr('width',function(d){
+        return progressScale(scrollTop);
+      });
+
+      circle
+        .attr("cx", function(d) {
+          return projection([d[2],d[1]])[0];
+        })
+        .attr("cy", function(d) {
+          return projection([d[2], d[1]])[1];
+        });
+
+      // change dates locations and opacity to hide some
+      dates
+        .attr('x', function (d,i) {
+          return 4+i*(width - pad*2 - len - 20)/(datesList.length - 1);
+        })
+        .attr('opacity', function(d,i) {
+          if (width < 900) {
+            if (i % 2 == 1) {
+              return 0;
+            }
+          }
+          if (width < 400) {
+            if (i % 3 !== 0) {
+              return 0;
+            }
+          }
+        });
+
+    }
+  });
+
+  </script>
+</body>
