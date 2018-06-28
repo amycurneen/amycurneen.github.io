@@ -7,6 +7,7 @@
   <script src="//d3js.org/topojson.v2.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Raleway|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/visual.ico" />
 </head>
 
 <body>
@@ -516,14 +517,16 @@
             timeline.attr('width', function(d){
               return progressScale(scrollTop);
             });
-             var pos = -1;
 
-            if (sectionTop == 35) {
+            var pos = -1;
+
+            if (sectionTop > 35) {
               var pos = 0;
             }
 
             if (sectionTop == 90) {
               var pos = 1;
+              var move2
             }
 
             if (sectionTop == length-2) {
